@@ -1,0 +1,54 @@
+.popup {
+  &-wrap {
+    background-color: #fff;
+    padding: 60px 0 30px;
+    position: relative;
+    .close-btn {
+      width: 31px;
+      height: 31px;
+      position: absolute;
+      padding: 65px 44px;
+      right: 0;
+      top: 0;
+    }
+  }
+  &-title {
+    padding-left: 45px;
+    margin-bottom: 90px;
+    &__icon {
+      width: 19px;
+      height: 35px;
+      padding-right: 28px;
+    }
+    &__text {
+      font-size: 44px;
+      font-weight: 600;
+      color: rgba(26, 26, 26, 1);
+      line-height: 44px;
+      letter-spacing: 4px;
+    }
+  }
+  &-actions {
+    margin-top: 90px;
+    .action-btn {
+      @include btn(block);
+      width: 690px;
+      line-height: 88px;
+      height: 88px;
+      color: #fff;
+      margin-top: 30px;
+      &:first-of-type {
+        // line-height: 84px;
+        // color: rgba(26, 26, 26, 1);
+        // background-color: #fff;
+        // border: 1px solid rgba(26, 26, 26, 1);
+      }
+      &__icon {
+        margin-right: 20px;
+      }
+    }
+    &.no-margin-t {
+      margin-top: 0;
+    }
+  }
+}

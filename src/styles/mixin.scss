@@ -1,0 +1,82 @@
+@mixin btn($display: inline-block) {
+  box-sizing: border-box;
+  color: #fff;
+  display: $display;
+  padding: 0;
+  background-color: #1a1a1a;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  border-radius: 0;
+  margin: auto;
+}
+
+@mixin center($type: y) {
+  @if $type == y {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @if $type == x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@mixin header() {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: rgba(38, 38, 38, 1);
+  line-height: 27px;
+}
+
+@mixin fixed($dir: bottom, $bgColor: #fff) {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+@mixin flex() {
+  display: flex;
+  &.jb {
+    justify-content: space-between;
+  }
+  &.ac {
+    align-items: center;
+  }
+  &.grow1 {
+    flex-grow: 1;
+  }
+}
+
+@mixin ellipsis($line: 1) {
+  @if $line==1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  } @else {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+  }
+}
+
+@mixin border($dir: bottom, $width: 1px, $color: #d4d4d4) {
+  @if $dir == all {
+    border: $width solid $color;
+  } @else {
+    border-#{$dir}: $width solid $color;
+  }
+}
+
+@mixin bold($color: #1a1a1a) {
+  -webkit-text-stroke: 1px $color;
+}

@@ -36,10 +36,10 @@ const config = {
   },
   copy: {
     patterns: [
-      { from: 'src/assets/images/navi-tab/', to: 'dist/assets/images/navi-tab/' },
-      { from: 'src/components/vant-weapp/wxs/', to: 'dist/components/vant-weapp/wxs/' },
-      { from: 'src/components/wxParse/wxParse.wxss', to: 'dist/components/wxParse/wxParse.wxss' },
-      { from: 'src/components/wxParse/wxParse.wxml', to: 'dist/components/wxParse/wxParse.wxml' }
+      // { from: 'src/assets/images/navi-tab/', to: 'dist/assets/images/navi-tab/' },
+      // { from: 'src/components/vant-weapp/wxs/', to: 'dist/components/vant-weapp/wxs/' },
+      // { from: 'src/components/wxParse/wxParse.wxss', to: 'dist/components/wxParse/wxParse.wxss' },
+      // { from: 'src/components/wxParse/wxParse.wxml', to: 'dist/components/wxParse/wxParse.wxml' }
     ],
     options: {
     }
